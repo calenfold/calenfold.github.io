@@ -1,1 +1,93 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calenfold — Your calendar, unfolded</title>
+  <meta name="description" content="Calenfold — Your calendar, unfolded. 予定を重ねて、ひと目で。A simple, fast calendar app for iPhone. Coming soon to the App Store.">
+  <meta property="og:title" content="Calenfold — Your calendar, unfolded">
+  <meta property="og:description" content="予定を重ねて、ひと目で。A simple, fast calendar app for iPhone. Coming soon.">
+  <meta property="og:url" content="https://calenfold.com/">
+  <meta name="twitter:card" content="summary">
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --fg: #1c1c1e;
+      --sub: #6e6e73;
+      --accent: #e5484d;
+      --line: #e3e3e0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111113;
+        --fg: #f2f2f7;
+        --sub: #98989f;
+        --accent: #ff6369;
+        --line: #2c2c2e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Helvetica Neue", sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      letter-spacing: -0.03em;
+      margin: 0 0 8px;
+    }
+    h1 span { color: var(--accent); }
+    .lead { font-size: 1.25rem; margin: 0 0 4px; }
+    .lead { font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em; }
+    .ja { font-size: 1.125rem; margin: 0 0 20px; }
+    .desc { color: var(--sub); font-size: 0.95rem; margin: 0 0 32px; }
+    .badge {
+      display: inline-block;
+      align-self: flex-start;
+      padding: 6px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 0.875rem;
+      color: var(--sub);
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 20px 24px;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--sub);
+    }
+    footer a { color: inherit; margin: 0 10px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Calen<span>fold</span></h1>
+    <p class="lead">Your calendar, unfolded.</p>
+    <p class="ja">予定を重ねて、ひと目で</p>
+    <p class="desc">A simple, fast calendar for iPhone.<br>シンプルで軽快な iPhone 用カレンダーアプリ</p>
+    <span class="badge">Coming soon to the App Store / 近日公開</span>
+  </main>
+  <footer>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/support.html">Support</a>
+    <a href="https://x.com/calenfold">X</a>
+    <div>&copy; 2026 Calenfold</div>
+  </footer>
+</body>
+</html>
