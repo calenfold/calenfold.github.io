@@ -31,7 +31,7 @@
 <h2>通信</h2>
 <p>CalenFold が通信するのは、次の場合だけです。予定やその他の情報を送ることはありません。</p>
 <ul>
-<li>天気ウィジェット: 設定で都市を選んだときだけ、その都市の位置 (緯度と経度) をノルウェー気象局 (MET Norway, api.met.no) に送り、天気予報を受け取ります。現在地は使いません。</li>
+<li>天気ウィジェット: 設定で都市を選んだときだけ、その都市のおおよその位置 (約1kmに丸めた緯度と経度) をノルウェー気象局 (MET Norway, api.met.no) に送り、天気予報を受け取ります。現在地は使いません。</li>
 <li>都市の検索: 設定で入力した都市名を、Apple の地図サービス (MapKit) に送って候補を探します。</li>
 </ul>
 <p>このほか、設定の「サポート」などのリンクや、予定のメモにあるリンクをタップしたときだけ、Safari などでそのページを開きます。</p>
@@ -64,7 +64,7 @@
 <h2>Network</h2>
 <p>CalenFold connects to the internet only in these cases, and never sends your events or anything else about you.</p>
 <ul>
-<li>Weather widget: only after you choose a city in Settings, its position (latitude and longitude) is sent to the Norwegian Meteorological Institute (MET Norway, api.met.no) to get the forecast. Your current location is not used.</li>
+<li>Weather widget: only after you choose a city in Settings, its approximate position (latitude and longitude rounded to about 1 km) is sent to the Norwegian Meteorological Institute (MET Norway, api.met.no) to get the forecast. Your current location is not used.</li>
 <li>City search: the city name you type in Settings is sent to Apple's map service (MapKit) to find matches.</li>
 </ul>
 <p>Otherwise, only when you tap a link, such as Support in Settings or a link in an event's notes, the page opens in Safari or another app.</p>
